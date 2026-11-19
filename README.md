@@ -13,9 +13,18 @@ Moteur autonome embarqué (Edge Computing), 100 % hors-ligne :
 ## Installation
 
 ```bash
-git clone <URL_DU_DEPOT>
+git clone https://github.com/AkashiDev-ui/gml-edge-poc.git
 cd gml-edge-poc
 ```
+
+> **Note Windows :** les commandes ci-dessous utilisent `python3` (Linux / macOS).
+> Sous Windows, remplacez `python3` par `python` (ou `py`). En effet, `python3` y
+> renvoie par défaut vers le Microsoft Store au lieu de l'interpréteur installé.
+>
+> ```powershell
+> python main.py
+> python -m unittest tests/test_engines.py -v
+> ```
 
 ## Lancer la démonstration
 
