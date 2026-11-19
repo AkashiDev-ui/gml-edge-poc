@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "vehicle_id": "GML-TRUCK-001",
+  "date": "2023-03-15",
+  "period": {
+    "start_ts": 1678880000.0,
+    "end_ts": 1678880009.0
+  },
+  "processing": {
+    "algorithm": "moving_average + threshold + event_grouping",
+    "sampling_hz": 1.0,
+    "smoothing_window": 1,
+    "threshold_ms2": -2.5,
+    "lines_read": 10,
+    "lines_valid": 10,
+    "lines_rejected": 0,
+    "data_quality_pct": 100.0
+  },
+  "events": [
+    {
+      "type": "HARSH_BRAKING",
+      "severity": "MODERATE",
+      "timestamp": 1678880005,
+      "datetime_utc": "2023-03-15T11:33:25+00:00",
+      "duration_s": 1.0,
+      "peak_acc_y_ms2": -3.45,
+      "peak_g": 0.352,
+      "penalty": 5
+    }
+  ],
+  "summary": {
+    "harsh_braking_count": 1,
+    "safety_score": 95,
+    "rating": "A"
+  }
+}
